@@ -1,0 +1,316 @@
+:root {
+    --bg: #0d0d0d;
+    --bg-surface: #141414;
+    --text: #c8c8c8;
+    --text-muted: #666;
+    --accent: #b08d57;
+    --border: #1e1e1e;
+    --font: 'Lexend', sans-serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 19px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-weight: 300;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header */
+
+header {
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.home-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.home-link:hover {
+    color: var(--accent);
+}
+
+/* Main content */
+
+main {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+}
+
+main h1 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+main p {
+    margin-bottom: 1.15rem;
+    text-indent: 1.5em;
+}
+
+main p:first-of-type,
+main hr + p,
+main h1 + p,
+main h2 + p,
+main h3 + p {
+    text-indent: 0;
+}
+
+main hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.5rem auto;
+    max-width: 3rem;
+}
+
+main em {
+    font-style: italic;
+}
+
+main strong {
+    font-weight: 500;
+}
+
+/* Footnotes */
+
+.footnote {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 0.6rem;
+    text-indent: 0 !important;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+.chapter-nav {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+}
+
+.chapter-nav a,
+.extra-nav a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.chapter-nav a:hover,
+.extra-nav a:hover {
+    text-decoration: underline;
+}
+
+.chapter-nav span {
+    min-width: 6rem;
+}
+
+.extra-nav {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 0.5rem 1.5rem 4rem;
+    text-align: center;
+}
+
+/* Home page */
+
+.hero {
+    text-align: center;
+    padding: 5rem 1.5rem 2rem;
+}
+
+.hero h1 {
+    font-weight: 400;
+    font-size: 2.8rem;
+    letter-spacing: 0.08em;
+    color: var(--text);
+    margin-bottom: 0.6rem;
+}
+
+.hero .author {
+    color: var(--text-muted);
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.hero .translator {
+    color: var(--text-muted);
+    font-weight: 300;
+    font-size: 0.82rem;
+    font-style: italic;
+}
+
+.hero .source {
+    margin-top: 0.8rem;
+}
+
+.hero .source a {
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+.hero .source a:hover {
+    color: var(--accent);
+}
+
+/* Bookmarks */
+
+.bookmarks {
+    max-width: 36rem;
+    margin: 2.5rem auto 0;
+    padding: 1.5rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+}
+
+.bookmarks h2 {
+    font-weight: 400;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+}
+
+.bookmark-link {
+    display: none;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 0.35rem 0;
+    font-size: 0.9rem;
+}
+
+.bookmark-link:hover {
+    text-decoration: underline;
+}
+
+.bookmark-link .detail {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+.no-bookmarks {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* Two-column layout */
+
+.columns {
+    max-width: 36rem;
+    margin: 2.5rem auto 4rem;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.column h2 {
+    font-weight: 400;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.column a {
+    display: block;
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.35rem 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.column a:hover {
+    color: var(--accent);
+}
+
+/* Companion essays */
+
+main h2 {
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--text);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.04em;
+}
+
+main h3 {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+}
+
+main blockquote {
+    border-left: 2px solid var(--border);
+    padding-left: 1.2rem;
+    margin: 1.5rem 0;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+main blockquote p {
+    text-indent: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    html {
+        font-size: 17px;
+    }
+    .hero {
+        padding-top: 3rem;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .columns {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    main {
+        padding: 2rem 1.25rem 3rem;
+    }
+}
