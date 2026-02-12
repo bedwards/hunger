@@ -1,10 +1,10 @@
 :root {
-    --bg: #0d0d0d;
-    --bg-surface: #141414;
-    --text: #c8c8c8;
-    --text-muted: #666;
-    --accent: #b08d57;
-    --border: #1e1e1e;
+    --bg: #f5f2ed;
+    --bg-surface: #ebe7e0;
+    --text: #111;
+    --text-muted: #555;
+    --accent: #8a6d3b;
+    --border: #d5d0c8;
     --font: 'Lexend', sans-serif;
 }
 
