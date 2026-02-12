@@ -1,7 +1,7 @@
 :root {
     --bg: #f5f2ed;
     --bg-surface: #ebe7e0;
-    --text: #111;
+    --text: #000;
     --text-muted: #555;
     --accent: #8a6d3b;
     --border: #d5d0c8;
@@ -15,7 +15,7 @@
 }
 
 html {
-    font-size: 19px;
+    font-size: 21px;
     scroll-behavior: smooth;
 }
 
